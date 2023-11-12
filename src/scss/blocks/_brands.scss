@@ -1,0 +1,138 @@
+/*---------------------------------
+заголовок
+------------------------------------*/
+
+
+.second-header{
+    padding: 16px;
+    border-top: 1px solid $second-lazur;
+    background: linear-gradient(270deg, $light-grey 0%, $white 98.61%);
+  }
+  .second-title {
+    color: $grey;
+    font-family: TT Lakes Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+  }
+
+  /*---------------------------------
+основная часть - бренды и свайпер
+------------------------------------*/
+
+.container{
+  background: $light-grey;
+  padding: 16px 16px 70px 16px;
+
+}
+@media (min-width: 767px) {
+  .container{
+   padding: 32px 0 70px 32px;
+   
+  
+}
+}
+.slide-wrapper{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 16px;
+
+
+}
+@media (min-width: 767px) {
+  .slide-wrapper{
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+.slide{
+  box-sizing: border-box;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 240px;
+   }
+
+   @media (min-width: 767px) {
+    .slide{
+      flex: 0 0 224px;
+    }
+  }
+  @media (min-width: 1119px) {
+    .slide{
+      flex: 0 0 240px;
+    }
+  }
+
+  .slide__link{
+    background-image: url("../img/go.svg");
+  }
+/*---------------------------------
+отображение брендов при смене ширины окна
+------------------------------------*/
+
+@media (min-width: 767px) {
+    .slide_hidden-767{
+  display: none;
+    }
+    }
+  @media (min-width: 1439px) {
+    .slide_hidden-767{
+      display: flex;
+        }
+    .slide_hidden-1439{
+      display: none;
+        }
+      }
+  
+   
+  
+  /*---------------------------------
+  пагинация свайпера
+  ------------------------------------*/
+  .swiper-pagination{
+  margin-bottom: 30px;
+  }
+  @media (min-width: 767px) {
+    .swiper-pagination{
+      display: none;
+      }
+    }
+  
+  .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: #B5B6BC;
+    opacity: 0.4;
+  }
+  .swiper-pagination-bullet-active{
+    opacity: 1;
+  }
+  
+  
+  
+  /*---------------------------------
+  кнопка покзать всё
+  ------------------------------------*/
+  
+ 
+  
+  .btn_hidden{
+    display: none;
+  }
+  @media (min-width: 767px) {
+    .btn_hidden{
+      display: block;
+    }
+    }

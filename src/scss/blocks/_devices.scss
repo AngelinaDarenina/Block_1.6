@@ -1,0 +1,67 @@
+@media (min-width: 767px) {
+.devices__wrapper{
+    gap: 14px;
+}
+}
+@media (min-width: 767px) {
+    .devices__container{
+        padding: 20px 0 70px 20px;
+    }
+}
+
+  /*---------------------------------
+панели с содержанием
+------------------------------------*/
+.devices__slide{
+box-sizing: border-box;
+
+    height: 160px;
+    border-radius: 6px;
+    border: 1px solid $second-grey;
+    background: $white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  flex: 0 0 240px;
+    }
+
+    .devices__device{
+        font-family: TT Lakes Medium;
+    }
+
+    .devices__link{
+        background-image: url("../img/go.svg");
+        margin-left: auto;
+          }
+
+  /*---------------------------------
+кнопка
+------------------------------------*/
+.btn-devices_hidden{
+    display: none;
+  }
+  @media (min-width: 767px) {
+    .btn-devices_hidden{
+      display: block;
+    }
+    }
+
+    /*---------------------------------
+отображение панелей при смене ширины окна
+------------------------------------*/
+
+@media (min-width: 767px) {
+    .devices__slide_hidden-767{
+  display: none;
+    }
+    }
+  @media (min-width: 1439px) {
+    .devices__slide_hidden-767{
+      display: flex;
+        }
+    .devices__slide_hidden-1439{
+      display: none;
+        }
+      }
+  

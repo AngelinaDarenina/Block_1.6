@@ -1,0 +1,415 @@
+body{
+  background-color: $white;
+}
+
+@media (min-width: 1439px) {
+  .page{
+    width: 1440px;
+margin: 0 auto;
+position: relative;
+}
+}
+
+
+/*---------------------------------
+верхний бокс с лого и иконками
+------------------------------------*/
+
+/*----------контейнер шапки-------------*/
+
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    min-width: 320px;
+    height: 88px;
+    background: $white;
+    padding: 18px 16px;
+    border-bottom: 1px solid $second-lazur;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  @media (min-width: 767px) {
+    .header {
+      padding: 18px 24px;
+        }
+  }
+ @media (min-width: 1139px) {
+    .header {
+        height: 88px;
+        width: 320px;
+        background: $light-grey;
+        border-bottom: none;
+       
+        
+      }
+  }
+  @media (min-width: 1439px) {
+    .header {
+      overflow: auto;
+      width: 320px;
+       height: 100vh;
+        display: block;
+        padding: 0;
+      }
+  }
+    
+ 
+  /*----------иконки-------------*/
+  
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    background-size: cover;
+    transition: 0.3s;
+  }
+    .btn-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+ 
+  .header__icon{
+    margin-right: 16px;
+     }
+ @media (min-width: 1139px) {
+    .header__icon{
+       display: none;
+ }
+}
+
+  .header__icon:nth-child(1){
+    background-image: url("../img/burger.svg");
+    z-index: 300;
+     }
+  .header__icon:nth-child(4){
+    background-image: url("../img/call.svg");
+  }
+  .header__icon:nth-child(5){
+    background-image: url("../img/chat.svg");
+  }
+  .header__icon:nth-child(6){
+    background-image: url("../img/profile.svg");
+  }
+  .header__icon:nth-child(8){
+    background-image: url("../img/repair.svg");
+  }
+  .header__icon:nth-child(9){
+    background-image: url("../img/checkstatus.svg");
+    margin-right: 0;
+   
+  }
+ 
+
+  
+  .header__icon_hidden {
+    display: none;
+  }
+  @media (min-width: 767px) {
+    .header__icon_hidden {
+      display: block;
+    }
+  }
+  @media (min-width: 1139px) {
+    .header__icon_hidden {
+      display: none;
+    }
+  }
+  
+  /*----------лого-------------*/
+  
+  .logo {
+    width: 96.548px;
+    height: 50.815px;
+  }
+  .header__logo{
+    margin-right: auto;
+    z-index: 300;
+  }
+  @media (min-width: 1439px) {
+    .header__logo{
+      position: absolute;
+      top: 18px;
+      left: 48px;
+    }
+  }
+  
+  /*----------разделитель-------------*/
+  
+  .divider {
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #eaeaea;
+  }
+  .header__divider{
+    margin-left: 4px;
+    margin-right: 20px;
+  }
+@media (min-width: 1139px) {
+    .header__divider {
+          display: none;
+        }
+      }
+
+  .header__divider_hidden {
+    display: none;
+  }
+  @media (min-width: 767px) {
+    .header__divider_hidden {
+      display: block;
+    }
+  } 
+  @media (min-width: 1439px) {
+    .header__divider{
+      display: none;
+    }
+  }
+  
+  
+  
+  
+  /*--------------------------------------------
+  основная часть
+  ---------------------------------------------*/
+  .main {
+    min-width: 320px;
+    min-height: 509px;
+    background: $light-grey;
+    padding-top: 112px;
+  }
+  @media (min-width: 1139px) {
+    .main {
+      padding-top: 24px;
+      padding-left: 320px;
+    }
+  }
+
+  
+  /*---------------------------------
+  заголовок с доп меню
+  ---------------------------------*/
+  
+  /*----------контейнер заголовка-------------*/
+  
+  .heading {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 3px solid $lazur;
+    padding-left: 12px;
+  }
+  @media (min-width: 767px) {
+    .heading {
+      padding-left: 20px;
+    }
+  }
+  @media (min-width: 1139px) {
+    .heading {
+      padding: 0 32px 0 28px ;
+    }
+  }
+  
+  /*----------скрытие/появление меню заголовка-------------*/
+  .heading__item:not(:first-child){
+    display:none;
+  }
+  @media (min-width: 1139px) {
+    .heading__item:not(:first-child) {
+      display: block;
+    }
+  }
+  
+  /*----------заголовок-------------*/
+  .title {
+    color: #1b1c21;
+    font-family: TT Lakes Bold;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    
+   }
+   .heading__item:first-child{
+    margin-right: auto;
+   }
+  
+  /*----------ссылки/иконки меню-------------*/
+  .link {
+    color: $dark;
+  text-align: right;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  }
+ 
+  .heading__item:nth-child(even){
+    margin-right: 8px;
+  }
+  .heading__item:nth-child(3){
+    background-image: url("../img/repair.svg");
+  
+  }
+  .heading__item:nth-child(3){
+    margin-right: 32px;
+  }
+  .heading__item:nth-child(5){
+    background-image: url("../img/checkstatus.svg");
+  
+  }
+  
+  
+  /*---------------------------------
+  навигация (slide-menu)
+  -----------------------------------*/
+  
+  .slide-menu {
+    padding: 24px 0 24px 16px;
+    display: flex;
+      overflow-x: scroll;
+  }
+  @media (min-width: 767px){
+    .slide-menu {
+      padding: 32px 0 32px 24px;
+    }
+  }
+  @media (min-width: 1139px){
+    .slide-menu {
+      flex-wrap: wrap;
+      
+    }
+  }
+  
+  .slide-menu::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slide-menu__btn {
+    color: $grey;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    height: 40px;
+    padding: 0 20px;
+    margin-right: 10px;
+    transition: linear .3s;
+  }
+  .slide-menu__btn:hover{
+    border-radius: 6px;
+    border: 2px solid $light-lazur;
+    background: $white;  
+    cursor: pointer; 
+  }
+  .slide-menu__btn_active {
+      border-radius: 6px;
+    border: 2px solid $light-lazur;
+    background: $white;     
+  }
+  
+
+  /*----------------------------
+  основной контент (текст с картинкой)
+  --------------------------------*/
+  
+  /*----------контейнер-------------*/
+  
+  
+  @media (min-width: 767px) {
+    .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    padding: 0 24px;
+    column-gap: 36px;
+    } 
+    }
+  @media (min-width: 1139px) {
+    .content{
+      padding: 0 34px;
+    }
+  }
+  
+  /*----------текст-------------*/
+  
+  .content__reading{
+    padding: 0 16px;
+  
+  }
+  
+  .text {
+    color: $dark;
+    font-family: TT Lakes Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+    height: 90px;
+  }
+  @media (min-width: 767px) {
+    .text {
+      line-height: 20px;
+      height: 160px;
+    }
+  }
+    /*----------кнопка читать далее-------------*/
+  .button-more{
+    color: $dark;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    background-color: transparent;
+  border: none;
+    transition: linear .3s;
+  }
+  
+ 
+  .button-more:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
+      }
+  
+  .button-more::before{
+    content: url('../img/expand.svg');
+    position: relative;
+    top: 6px;
+   }
+  .content__read-more {
+    margin: 16px 0;
+   }
+  /*----------картинка-------------*/
+  
+  .content__picture{
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  
+  }
+  @media (min-width: 767px) {
+    .content__picture{
+    width: 50%;
+    border-radius: 6px;
+      }
+  }
+  

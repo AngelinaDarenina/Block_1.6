@@ -1,0 +1,164 @@
+/*---------------------------------
+панели на мобильном
+------------------------------------*/
+
+@media (min-width: 767px) {
+  .prices__container {
+    display: none;
+  }
+}
+
+.prices__slide {
+  width: 260px;
+  height: 200px;
+  background: $white;
+  border-radius: 6px;
+  padding: 16px 24px 24px 16px;
+  font-family: TT Lakes Regular;
+  font-size: 14px;
+  color: $dark;
+  line-height: 16px;
+  position: relative;
+  flex: 1 0 260px;
+}
+
+.prices__content:nth-child(odd) {
+  color: $grey;
+}
+.prices__content:nth-child(even) {
+  margin-bottom: 16px;
+}
+.prices__button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.btn-order {
+  width: 119px;
+  height: 32px;
+  padding-left: 16px;
+  background-color: $pink;
+  border-radius: 16px;
+  border: none;
+  color: $white;
+  font-family: TT Lakes Regular;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.btn-order::after {
+  content: url("../img/goside.svg");
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+.btn-order:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*---------------------------------
+подпись под ценами и ссылка
+------------------------------------*/
+
+.prices__line {
+  max-width: 450px;
+  padding: 16px;
+  color: $dark;
+  font-family: TT Lakes Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.prices__link {
+  padding: 16px 16px 48px 16px;
+  color: $dark;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: 0.2s linear;
+}
+.prices__link::after {
+  content: url("../img/more.svg");
+  position: relative;
+  top: 10px;
+}
+.prices__link:hover{
+    opacity: 0.6;
+}
+/*---------------------------------
+таблица на экране больше 767px
+------------------------------------*/
+.prices__table{
+    padding: 64px 24px 24px 24px;
+    display: none;
+}
+@media (min-width: 767px) {
+    .prices__table {
+      display: block;
+    }
+  }
+.table{
+    background-color: $white;
+    border-radius: 6px;
+    width: 100%;
+    height: 324px;
+    padding: 24px;
+    position: relative;
+}
+table {
+  text-align: left;
+  height: 356px;
+  width: 95%;
+  max-width: 1056px;
+  border-collapse: collapse;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0;
+}
+
+th {
+  color: $grey;
+  font-family: TT Lakes Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+ 
+
+}
+
+td {
+color: $dark;
+font-family: TT Lakes Regular;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.2px;
+}
+
+tr:not(:first-child):not(:last-child) {
+    border-bottom: 1px solid $second-grey;
+
+  }
+
+.table__button {
+  position: relative;
+  }
+
+  td:last-child{
+    text-align: right;
+  }

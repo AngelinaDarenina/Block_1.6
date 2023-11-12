@@ -1,0 +1,169 @@
+/*---------------------------------
+контейнер боковой целиком
+------------------------------------*/
+
+.aside {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+display: none;
+}
+
+@media (min-width: 1139px) {
+  .aside {
+    display: flex;
+   flex-direction: column;
+   width: 320px;
+   box-shadow:none;
+      }
+}
+@media (min-width: 1439px) {
+  .aside {
+    position: sticky;
+   
+  min-width: 320px;
+  height: 100vh;
+  background: $white;
+      }
+}
+
+
+/*---------------------------------
+кнопка поиска
+------------------------------------*/
+
+.aside__icon{
+  margin: 24px 24px 0 auto;
+  background-image: url("../img/search.svg");
+}
+
+  /*---------------------------------
+  меню основное
+  ------------------------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  padding-top: 30px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.menu__btn {
+  color: $dark;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: none;
+  border-left: 4px solid transparent;
+  white-space: nowrap;
+  height: 32px;
+  padding-left: 20px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.menu__btn:hover {
+  color: $grey;
+  border-left: 4px solid $lazur;
+  cursor: pointer;
+}
+
+.menu__btn_active {
+  color: $grey;
+  border-left: 4px solid $lazur;
+}
+
+/*---------------------------------
+  низ эсайда с контактами
+  ------------------------------------*/
+
+.bottom {
+  padding: 24px 0 0 24px;
+}
+
+.contact__icon {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.contact__icon:nth-child(1) {
+  background-image: url("../img/call.svg");
+}
+
+.contact__icon:nth-child(2) {
+  background-image: url("../img/chat.svg");
+}
+.contact__icon:nth-child(3) {
+  background-image: url("../img/profile.svg");
+}
+
+.contact__mail {
+  color: $dark;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+.contact__number {
+  color: $dark;
+  font-family: TT Lakes Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+
+.lang__btn {
+  color: $dark;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.lang__btn:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+/*---------------------------------
+прозрачная боковая область
+------------------------------------*/
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100vh;
+  display: none;
+
+
+}

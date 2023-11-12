@@ -1,0 +1,38 @@
+/*--------------------------------------------
+класс, который будет добавляться при нажатии на бургер
+  ---------------------------------------------*/
+  .aside_open {
+   display: flex;
+   flex-direction: column;
+ 
+   }
+   @media (min-width: 767px) {
+    .aside_open {
+      width: 320px;
+    }
+   }
+.cover_open{
+    display: block;
+}
+
+/*.header__icon_hidden {
+    display: none;
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .burger_open{
+    background-image: url("../img/cross.svg") !important;
+  }

@@ -1,0 +1,91 @@
+/*----------фон-------------*/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba($white, $alpha: 0.9);
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup_open{
+    opacity: 1;
+  visibility: visible;
+}
+
+/*----------асайд-------------*/
+.popup__body {
+  min-height: 100vh;
+  background-color: $white;
+  padding: 24px 16px;
+}
+@media (min-width: 767px) {
+  .popup__body {
+    position: fixed;
+    right: 0;
+    width: 440px;
+    border-left: 1px solid $second-lazur;
+  }
+}
+/*----------кнопка закрыть-------------*/
+.popup__close {
+  background-image: url("../img/cross.svg");
+  margin-bottom: 40px;
+}
+@media (min-width: 767px) {
+  .popup__close {
+    position: absolute;
+    left: -80px;
+  }
+}
+
+/*----------заголовок-------------*/
+.popup__title {
+  margin-bottom: 24px;
+  position: relative;
+}
+.popup__title::before {
+  content: url("../img/highlight.svg");
+  position: absolute;
+  left: -16px;
+}
+
+/*----------поля ввода-------------*/
+.popup__input {
+  height: 48px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid $second-grey;
+}
+.popup__input[placeholder="Сообщение"] {
+  height: 118px;
+}
+
+/*----------текст-------------*/
+.popup__text {
+  color: $grey;
+  font-family: TT Lakes Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 20px;
+}
+.popup__link {
+  color: $pink;
+}
+
+/*----------кнопка отправить-------------*/
+.popup__button {
+  width: 136px;
+  position: absolute;
+  right: 16px;
+  margin-right: auto;
+}

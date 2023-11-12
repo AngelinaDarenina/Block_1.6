@@ -1,0 +1,1351 @@
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
+  \***********************************************************************************************************/
+@charset "UTF-8";
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url(../fonts/TTLakes-Regular.woff) format("woff"), url(../fonts/TTLakes-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url(../fonts/TTLakes-Medium.woff) format("woff"), url(../fonts/TTLakes-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url(../fonts/TTLakes-Bold.woff) format("woff"), url(../fonts/TTLakes-Bold.woff2) format("woff2");
+  font-weight: Bold;
+  font-style: normal; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+*:focus {
+  outline: 2px solid transparent; }
+
+body {
+  overflow-anchor: none;
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  color: #1B1C21;
+  background-color: #F8F8F8;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+input,
+textarea {
+  width: 100%; }
+
+textarea {
+  resize: none; }
+
+/*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
+/*Меняем цвет плейсхолдера в инпуте для Мозилы */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cacaca; }
+
+input:focus,
+textarea:focus {
+  outline: none; }
+
+footer {
+  background: #1B1C21; }
+
+.is--hidden {
+  display: none !important; }
+
+.btn--reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer; }
+
+.btn:active,
+.btn:focus {
+  outline: none; }
+
+.error {
+  border: 2px var(--error-red) solid !important; }
+
+.container {
+  max-width: 1810px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px; }
+  @media (max-width: 1200px) {
+    .container {
+      padding-right: 50px;
+      padding-left: 50px; } }
+  @media (max-width: 576px) {
+    .container {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+body {
+  background-color: #fff; }
+
+@media (min-width: 1439px) {
+  .page {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative; } }
+
+/*---------------------------------
+верхний бокс с лого и иконками
+------------------------------------*/
+/*----------контейнер шапки-------------*/
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  min-width: 320px;
+  height: 88px;
+  background: #fff;
+  padding: 18px 16px;
+  border-bottom: 1px solid #D9FFF5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+@media (min-width: 767px) {
+  .header {
+    padding: 18px 24px; } }
+
+@media (min-width: 1139px) {
+  .header {
+    height: 88px;
+    width: 320px;
+    background: #f8f8f8;
+    border-bottom: none; } }
+
+@media (min-width: 1439px) {
+  .header {
+    overflow: auto;
+    width: 320px;
+    height: 100vh;
+    display: block;
+    padding: 0; } }
+
+/*----------иконки-------------*/
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  transition: 0.3s; }
+
+.btn-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
+.header__icon {
+  margin-right: 16px; }
+
+@media (min-width: 1139px) {
+  .header__icon {
+    display: none; } }
+
+.header__icon:nth-child(1) {
+  background-image: url(../img/burger.svg);
+  z-index: 300; }
+
+.header__icon:nth-child(4) {
+  background-image: url(../img/call.svg); }
+
+.header__icon:nth-child(5) {
+  background-image: url(../img/chat.svg); }
+
+.header__icon:nth-child(6) {
+  background-image: url(../img/profile.svg); }
+
+.header__icon:nth-child(8) {
+  background-image: url(../img/repair.svg); }
+
+.header__icon:nth-child(9) {
+  background-image: url(../img/checkstatus.svg);
+  margin-right: 0; }
+
+.header__icon_hidden {
+  display: none; }
+
+@media (min-width: 767px) {
+  .header__icon_hidden {
+    display: block; } }
+
+@media (min-width: 1139px) {
+  .header__icon_hidden {
+    display: none; } }
+
+/*----------лого-------------*/
+.logo {
+  width: 96.548px;
+  height: 50.815px; }
+
+.header__logo {
+  margin-right: auto;
+  z-index: 300; }
+
+@media (min-width: 1439px) {
+  .header__logo {
+    position: absolute;
+    top: 18px;
+    left: 48px; } }
+
+/*----------разделитель-------------*/
+.divider {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background: #eaeaea; }
+
+.header__divider {
+  margin-left: 4px;
+  margin-right: 20px; }
+
+@media (min-width: 1139px) {
+  .header__divider {
+    display: none; } }
+
+.header__divider_hidden {
+  display: none; }
+
+@media (min-width: 767px) {
+  .header__divider_hidden {
+    display: block; } }
+
+@media (min-width: 1439px) {
+  .header__divider {
+    display: none; } }
+
+/*--------------------------------------------
+  основная часть
+  ---------------------------------------------*/
+.main {
+  min-width: 320px;
+  min-height: 509px;
+  background: #f8f8f8;
+  padding-top: 112px; }
+
+@media (min-width: 1139px) {
+  .main {
+    padding-top: 24px;
+    padding-left: 320px; } }
+
+/*---------------------------------
+  заголовок с доп меню
+  ---------------------------------*/
+/*----------контейнер заголовка-------------*/
+.heading {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 3px solid #41f6d7;
+  padding-left: 12px; }
+
+@media (min-width: 767px) {
+  .heading {
+    padding-left: 20px; } }
+
+@media (min-width: 1139px) {
+  .heading {
+    padding: 0 32px 0 28px; } }
+
+/*----------скрытие/появление меню заголовка-------------*/
+.heading__item:not(:first-child) {
+  display: none; }
+
+@media (min-width: 1139px) {
+  .heading__item:not(:first-child) {
+    display: block; } }
+
+/*----------заголовок-------------*/
+.title {
+  color: #1b1c21;
+  font-family: TT Lakes Bold;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px; }
+
+.heading__item:first-child {
+  margin-right: auto; }
+
+/*----------ссылки/иконки меню-------------*/
+.link {
+  color: #1b1c21;
+  text-align: right;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.2px;
+  text-decoration: none; }
+
+.heading__item:nth-child(even) {
+  margin-right: 8px; }
+
+.heading__item:nth-child(3) {
+  background-image: url(../img/repair.svg); }
+
+.heading__item:nth-child(3) {
+  margin-right: 32px; }
+
+.heading__item:nth-child(5) {
+  background-image: url(../img/checkstatus.svg); }
+
+/*---------------------------------
+  навигация (slide-menu)
+  -----------------------------------*/
+.slide-menu {
+  padding: 24px 0 24px 16px;
+  display: flex;
+  overflow-x: scroll; }
+
+@media (min-width: 767px) {
+  .slide-menu {
+    padding: 32px 0 32px 24px; } }
+
+@media (min-width: 1139px) {
+  .slide-menu {
+    flex-wrap: wrap; } }
+
+.slide-menu::-webkit-scrollbar {
+  display: none; }
+
+.slide-menu__btn {
+  color: #7e7e82;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  white-space: nowrap;
+  height: 40px;
+  padding: 0 20px;
+  margin-right: 10px;
+  transition: linear .3s; }
+
+.slide-menu__btn:hover {
+  border-radius: 6px;
+  border: 2px solid #b8ffec;
+  background: #fff;
+  cursor: pointer; }
+
+.slide-menu__btn_active {
+  border-radius: 6px;
+  border: 2px solid #b8ffec;
+  background: #fff; }
+
+/*----------------------------
+  основной контент (текст с картинкой)
+  --------------------------------*/
+/*----------контейнер-------------*/
+@media (min-width: 767px) {
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 24px;
+    column-gap: 36px; } }
+
+@media (min-width: 1139px) {
+  .content {
+    padding: 0 34px; } }
+
+/*----------текст-------------*/
+.content__reading {
+  padding: 0 16px; }
+
+.text {
+  color: #1b1c21;
+  font-family: TT Lakes Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  height: 90px; }
+
+@media (min-width: 767px) {
+  .text {
+    line-height: 20px;
+    height: 160px; } }
+
+/*----------кнопка читать далее-------------*/
+.button-more {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: none;
+  transition: linear .3s; }
+
+.button-more:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer; }
+
+.button-more::before {
+  content: url(../img/expand.svg);
+  position: relative;
+  top: 6px; }
+
+.content__read-more {
+  margin: 16px 0; }
+
+/*----------картинка-------------*/
+.content__picture {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px; }
+
+@media (min-width: 767px) {
+  .content__picture {
+    width: 50%;
+    border-radius: 6px; } }
+
+/*---------------------------------
+контейнер боковой целиком
+------------------------------------*/
+.aside {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  display: none; }
+
+@media (min-width: 1139px) {
+  .aside {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    box-shadow: none; } }
+
+@media (min-width: 1439px) {
+  .aside {
+    position: sticky;
+    min-width: 320px;
+    height: 100vh;
+    background: #fff; } }
+
+/*---------------------------------
+кнопка поиска
+------------------------------------*/
+.aside__icon {
+  margin: 24px 24px 0 auto;
+  background-image: url(../img/search.svg); }
+
+/*---------------------------------
+  меню основное
+  ------------------------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  padding-top: 30px; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px; }
+
+.menu__btn {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: none;
+  border-left: 4px solid transparent;
+  white-space: nowrap;
+  height: 32px;
+  padding-left: 20px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear; }
+
+.menu__btn:hover {
+  color: #7e7e82;
+  border-left: 4px solid #41f6d7;
+  cursor: pointer; }
+
+.menu__btn_active {
+  color: #7e7e82;
+  border-left: 4px solid #41f6d7; }
+
+/*---------------------------------
+  низ эсайда с контактами
+  ------------------------------------*/
+.bottom {
+  padding: 24px 0 0 24px; }
+
+.contact__icon {
+  margin-right: 16px;
+  margin-bottom: 16px; }
+
+.contact__icon:nth-child(1) {
+  background-image: url(../img/call.svg); }
+
+.contact__icon:nth-child(2) {
+  background-image: url(../img/chat.svg); }
+
+.contact__icon:nth-child(3) {
+  background-image: url(../img/profile.svg); }
+
+.contact__mail {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px; }
+
+.contact__number {
+  color: #1b1c21;
+  font-family: TT Lakes Bold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin-bottom: 40px; }
+
+.lang__btn {
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition-duration: 0.2s;
+  transition-timing-function: linear; }
+
+.lang__btn:hover {
+  opacity: 0.4;
+  cursor: pointer; }
+
+/*---------------------------------
+прозрачная боковая область
+------------------------------------*/
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.9;
+  width: 100%;
+  height: 100vh;
+  display: none; }
+
+/*--------------------------------------------
+класс, который будет добавляться при нажатии на бургер
+  ---------------------------------------------*/
+.aside_open {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 767px) {
+  .aside_open {
+    width: 320px; } }
+
+.cover_open {
+  display: block; }
+
+/*.header__icon_hidden {
+    display: none;
+  }*/
+.burger_open {
+  background-image: url(../img/cross.svg) !important; }
+
+.content__text_open {
+  height: auto; }
+
+/*---------------------------------
+заголовок
+------------------------------------*/
+.second-header {
+  padding: 16px;
+  border-top: 1px solid #D9FFF5;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 98.61%); }
+
+.second-title {
+  color: #7e7e82;
+  font-family: TT Lakes Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase; }
+
+/*---------------------------------
+основная часть - бренды и свайпер
+------------------------------------*/
+.container {
+  background: #f8f8f8;
+  padding: 16px 16px 70px 16px; }
+
+@media (min-width: 767px) {
+  .container {
+    padding: 32px 0 70px 32px; } }
+
+.slide-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px; }
+
+@media (min-width: 767px) {
+  .slide-wrapper {
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap; } }
+
+.slide {
+  box-sizing: border-box;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 240px; }
+
+@media (min-width: 767px) {
+  .slide {
+    flex: 0 0 224px; } }
+
+@media (min-width: 1119px) {
+  .slide {
+    flex: 0 0 240px; } }
+
+.slide__link {
+  background-image: url(../img/go.svg); }
+
+/*---------------------------------
+отображение брендов при смене ширины окна
+------------------------------------*/
+@media (min-width: 767px) {
+  .slide_hidden-767 {
+    display: none; } }
+
+@media (min-width: 1439px) {
+  .slide_hidden-767 {
+    display: flex; }
+  .slide_hidden-1439 {
+    display: none; } }
+
+/*---------------------------------
+  пагинация свайпера
+  ------------------------------------*/
+.swiper-pagination {
+  margin-bottom: 30px; }
+
+@media (min-width: 767px) {
+  .swiper-pagination {
+    display: none; } }
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #B5B6BC;
+  opacity: 0.4; }
+
+.swiper-pagination-bullet-active {
+  opacity: 1; }
+
+/*---------------------------------
+  кнопка покзать всё
+  ------------------------------------*/
+.btn_hidden {
+  display: none; }
+
+@media (min-width: 767px) {
+  .btn_hidden {
+    display: block; } }
+
+@media (min-width: 767px) {
+  .devices__wrapper {
+    gap: 14px; } }
+
+@media (min-width: 767px) {
+  .devices__container {
+    padding: 20px 0 70px 20px; } }
+
+/*---------------------------------
+панели с содержанием
+------------------------------------*/
+.devices__slide {
+  box-sizing: border-box;
+  height: 160px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #fff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 240px; }
+
+.devices__device {
+  font-family: TT Lakes Medium; }
+
+.devices__link {
+  background-image: url(../img/go.svg);
+  margin-left: auto; }
+
+/*---------------------------------
+кнопка
+------------------------------------*/
+.btn-devices_hidden {
+  display: none; }
+
+@media (min-width: 767px) {
+  .btn-devices_hidden {
+    display: block; } }
+
+/*---------------------------------
+отображение панелей при смене ширины окна
+------------------------------------*/
+@media (min-width: 767px) {
+  .devices__slide_hidden-767 {
+    display: none; } }
+
+@media (min-width: 1439px) {
+  .devices__slide_hidden-767 {
+    display: flex; }
+  .devices__slide_hidden-1439 {
+    display: none; } }
+
+/*---------------------------------
+панели на мобильном
+------------------------------------*/
+@media (min-width: 767px) {
+  .prices__container {
+    display: none; } }
+
+.prices__slide {
+  width: 260px;
+  height: 200px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 16px 24px 24px 16px;
+  font-family: TT Lakes Regular;
+  font-size: 14px;
+  color: #1b1c21;
+  line-height: 16px;
+  position: relative;
+  flex: 1 0 260px; }
+
+.prices__content:nth-child(odd) {
+  color: #7e7e82; }
+
+.prices__content:nth-child(even) {
+  margin-bottom: 16px; }
+
+.prices__button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px; }
+
+.btn-order {
+  width: 119px;
+  height: 32px;
+  padding-left: 16px;
+  background-color: #FF3E79;
+  border-radius: 16px;
+  border: none;
+  color: #fff;
+  font-family: TT Lakes Regular;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  transition: 0.3s; }
+
+.btn-order::after {
+  content: url(../img/goside.svg);
+  position: absolute;
+  top: 4px;
+  right: 8px; }
+
+.btn-order:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
+/*---------------------------------
+подпись под ценами и ссылка
+------------------------------------*/
+.prices__line {
+  max-width: 450px;
+  padding: 16px;
+  color: #1b1c21;
+  font-family: TT Lakes Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px; }
+
+.prices__link {
+  padding: 16px 16px 48px 16px;
+  color: #1b1c21;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  transition: 0.2s linear; }
+
+.prices__link::after {
+  content: url(../img/more.svg);
+  position: relative;
+  top: 10px; }
+
+.prices__link:hover {
+  opacity: 0.6; }
+
+/*---------------------------------
+таблица на экране больше 767px
+------------------------------------*/
+.prices__table {
+  padding: 64px 24px 24px 24px;
+  display: none; }
+
+@media (min-width: 767px) {
+  .prices__table {
+    display: block; } }
+
+.table {
+  background-color: #fff;
+  border-radius: 6px;
+  width: 100%;
+  height: 324px;
+  padding: 24px;
+  position: relative; }
+
+table {
+  text-align: left;
+  height: 356px;
+  width: 95%;
+  max-width: 1056px;
+  border-collapse: collapse;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0; }
+
+th {
+  color: #7e7e82;
+  font-family: TT Lakes Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218; }
+
+td {
+  color: #1b1c21;
+  font-family: TT Lakes Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px; }
+
+tr:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid #EAEAEA; }
+
+.table__button {
+  position: relative; }
+
+td:last-child {
+  text-align: right; }
+
+footer {
+  background: #f8f8f8; }
+
+.footer {
+  border-top: 1px solid #D9FFF5;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px; }
+
+@media (min-width: 767px) {
+  .footer {
+    padding: 32px 24px;
+    flex-direction: row;
+    align-items: flex-start; } }
+
+.footer__string {
+  font-family: TT Lakes Medium;
+  color: #7e7e82;
+  text-align: center;
+  opacity: 0.7218;
+  flex: 1 1; }
+
+@media (min-width: 767px) {
+  .footer__string:first-child {
+    text-align: left; }
+  .footer__string:last-child {
+    text-align: right; } }
+
+/*----------фон-------------*/
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden; }
+
+.popup_open {
+  opacity: 1;
+  visibility: visible; }
+
+/*----------асайд-------------*/
+.popup__body {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 24px 16px; }
+
+@media (min-width: 767px) {
+  .popup__body {
+    position: fixed;
+    right: 0;
+    width: 440px;
+    border-left: 1px solid #D9FFF5; } }
+
+/*----------кнопка закрыть-------------*/
+.popup__close {
+  background-image: url(../img/cross.svg);
+  margin-bottom: 40px; }
+
+@media (min-width: 767px) {
+  .popup__close {
+    position: absolute;
+    left: -80px; } }
+
+/*----------заголовок-------------*/
+.popup__title {
+  margin-bottom: 24px;
+  position: relative; }
+
+.popup__title::before {
+  content: url(../img/highlight.svg);
+  position: absolute;
+  left: -16px; }
+
+/*----------поля ввода-------------*/
+.popup__input {
+  height: 48px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-family: TT Lakes Medium;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA; }
+
+.popup__input[placeholder="Сообщение"] {
+  height: 118px; }
+
+/*----------текст-------------*/
+.popup__text {
+  color: #7e7e82;
+  font-family: TT Lakes Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 20px; }
+
+.popup__link {
+  color: #FF3E79; }
+
+/*----------кнопка отправить-------------*/
+.popup__button {
+  width: 136px;
+  position: absolute;
+  right: 16px;
+  margin-right: auto; }
+
+.popup-call_open {
+  opacity: 1;
+  visibility: visible; }
+
+
+/*# sourceMappingURL=main.css.map*/
